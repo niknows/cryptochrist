@@ -1,0 +1,26 @@
+# House Price Prediction App
+
+## Instalação
+
+1. Crie e ative um ambiente virtual (opcional):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # No Windows use: venv\Scripts\activate
+    ```
+
+2. Instale as dependências:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Uso
+
+1. Execute o aplicativo:
+    ```bash
+    python app.py
+    ```
+
+2. Envie uma solicitação POST para o endpoint `/predict` com os dados do conjunto de características:
+    ```bash
+    curl -X POST -H "Content-Type: application/json" -d '{"features": [0.02731, 0.0, 7.07, 0.0, 0.469, 6.421, 78.9, 4.9671, 2.0, 242.0, 17.8, 396.90, 9.14]}' http://127.0.0.1:5000/predict
+    ```
